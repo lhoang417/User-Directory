@@ -13,10 +13,11 @@ function ProfileBox() {
 		//function to decrease base variable above
 		setNumber(number - 1); //destructured function to set variable to decrement by one
 	}
-	function deleteProfile(target) {
-		const newState = [...count];
+	function deleteProfile(id) {
+		// const newState = [...count];
 
-		newState.splice(target, 1);
+		// newState.splice(target, 1);
+		const newState = count.filter((item) => item.id !== id);
 		setCount(newState);
 	}
 
