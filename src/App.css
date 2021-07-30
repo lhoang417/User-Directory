@@ -1,38 +1,143 @@
 .App {
-  text-align: center;
+	position: relative;
+	text-align: center;
+	background-color: #222222;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5em;
+	color: white;
+	width: 100%;
+}
+header {
+	position: fixed;
+	background-color: #34a5da;
+	top: 0;
+	width: 100%;
+	display: flex;
+	height: 12vh;
+}
+header h2 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	left: 7%;
+	color: #252e32;
+	font-size: 1.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#profile {
+	position: relative;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#profile-content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: #ebebeb;
+	color: #222222;
+	width: 80vw;
+	flex-direction: column;
+}
+#idDiv {
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.5em;
+	padding-right: 1.5rem;
+	font-weight: 700;
+	padding-top: 1rem;
+}
+#nameDiv {
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 2.5em;
+	font-size: 1.5em;
+	font-weight: 800;
+	text-decoration: underline #6bb8dd 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#cityDiv {
+	display: flex;
+	font-weight: 500;
+	padding-left: 3.9em;
+	margin-bottom: -2em;
+	padding-top: 0.5em;
+}
+#titleDiv {
+	display: flex;
+	font-weight: 500;
+	padding-left: 3.9em;
+	margin-bottom: -2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#employerDiv {
+	display: flex;
+	font-weight: 500;
+	padding-left: 3.9em;
+	margin-bottom: -1em;
+}
+#favH4 {
+	display: flex;
+	padding-left: 3.9em;
+	margin-top: 2em;
+}
+#favoriteDiv {
+	display: flex;
+	justify-content: flex-start;
+	font-weight: 500;
+	margin-left: 3.9em;
+	margin-top: -1em;
+}
+#movieList {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-left: 2em;
+	text-align: left;
+	padding-bottom: 2em;
+	margin-top: -0.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+#buttonDiv {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+	margin-top: 0.5em;
+	text-decoration: none;
+	background-color: #222222;
+	color: white;
+	border: black;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+#back {
+	position: absolute;
+	left: 0;
+}
+
+#next {
+	position: absolute;
+	right: 0;
+}
+
+#deleteBtn {
+	display: inline;
+	position: absolute;
+	left: 45%;
+	border-radius: 25px;
+	background-color: #34a5da;
+	padding: 1rem 1.5rem;
+	font-size: 1.5rem;
+	margin-top: 1rem;
 }
