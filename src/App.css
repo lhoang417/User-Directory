@@ -61,6 +61,7 @@ header h2 {
 	font-size: 1.5em;
 	font-weight: 800;
 	text-decoration: underline #6bb8dd 4px;
+	text-underline-offset: 0.5rem;
 }
 
 #cityDiv {
